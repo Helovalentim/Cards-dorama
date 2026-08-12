@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+<!--Aqui começa o css-->
+    <style>
+        body { /*estilo geral do corpo da página*/
+            background: url();
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color:rgb(255, 252, 242); /*cor de fundo*/
+            margin: 20px; /*espaçamento externo*/
+        }
+
+
+header { /* cabeçalho*/
+    background: url(https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3YWJrbHY5bzJiNWhyb2Q2ZGF1M3RydzYxbzQ3bWYwbTNwMnQzZndhOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/XdPBRuLf8ma3SwBW4t/200.webp);
+    background-color:oklab(80.54299999999999% -0.08114 -0.00399); /*cor de fundo*/
+    color:rgb(5, 201, 198); /*cor do texto*/
+    padding: 20px; /* espaçamento interno*/
+    text-align: center; /*centraliza o conteúdo*/
+
+}
+
+nav a { /*links da navegação*/
+    color:rgb(14, 57, 97); /*cor dos links*/
+    margin: 0 30px; /* espaçamento lateral*/
+    text-decoration:none; /* remove o sublinhado*/
+    font-size: 20px; /* tamanho da fonte*/
+}
+
+nav a:hover { /*quando o mouse passa sobre o link*/
+    text-decoration:underline; /*adicione sublinhado*/
+    color:rgb(129, 203, 193); /* muda a cor*/
+}
+
+.fundo { /* container dos cards*/
+display: flex; /* ativa flexbox(lado a lado)*/
+gap: 10px; /*espaço entre os cards*/
+width: 100%; /*ocupa toda a largura*/
+height: 100; /*ocupa toda a altura*/
+flex-wrap: wrap; /*permite quebrar a linha*/
+justify-content: space-around; /*distribui os cards*/
+margin-top: 10px; /* espaço acima*/
+}
+
+.card { /*card individual*/
+    width:300px; /*largura fixa*/
+    height:350px; /* altura fixa*/
+    align-items: center; /*centraliza o conteúdo*/
+    background-color:rgb(140, 202, 201); /*cor do card*/
+    text-align: center; /* centraliza texto*/
+    margin: 30px; /*espaço lateral e horizontal do card*/
+    color:rgb(17, 15, 77); /*define uma cor para o texto no card*/
+    border-radius: 15px; /*cantos arredondados*/
+    padding: 10px; /*espaço interno*/
+}
+
+.card img {
+    width: 80%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color:rgb(130, 203, 212);
+    box-shadow: 0 15px 20px;
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3YWJrbHY5bzJiNWhyb2Q2ZGF1M3RydzYxbzQ3bWYwbTNwMnQzZndhOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/XdPBRuLf8ma3SwBW4t/200.webp);
+}
+
+.subtitulo {
+    text-align: center;
+}
+    </style>
+    <!--Aqui termina css-->
+</head>
+
+<body>
+
+
+    <!--Aqui começa o cabeçalho -->
+    <header>
+        <h1>Doramas</h1> <!--titulo do cabeçalho-->
+        <hr> <!--linha horizontal-->
+        <nav>
+            <a href="">LOJA</a>
+            <a href="">IMAGENS</a> <!--links do cabeçalho-->
+            <a href="">SOBRE</a>
+        </nav>
+        <hr> <!--linha horizontal-->
+    </header>
+    <!--Aqui termina o cabeçalho-->
+
+<!--aqui começa o subtitulo-->
+<div class="subtitulo">
+    <h2>Indicações de doramas para maratonar</h2>
+</div>
+
+<!--aqui termina o subtitulo-->
+
+<hr> <!--linha horizontal-->
+
+<!-- aqui ceomça o fundo dos cards-->
+<div class="fundo">
+
+    <!--Card 1-->
+    <a href="https://www.netflix.com/br/title/80200575">
+    <div class="card">
+        <img src="https://artworks.thetvdb.com/banners/v4/series/376472/posters/68814dbb95143.jpg" alt="">
+        <h2>Alice in borderland </h2>
+    </div>
+</a>
+    <!--Card 2-->
+    <a href="https://www.viki.com/tv/40466c-lovely-runner?locale=pt#episodes">
+    <div class="card">
+        <img src="https://asianwiki.com/images/3/39/Lovely_Runner-p1.jpg" alt="">
+        <h2> Lovely runner </h2>
+    </div>
+</a>
+    <!--Card 3-->
+    <a href="https://www.netflix.com/br/title/81444051">
+    <div class="card">
+        <img src="https://momentokdrama.com.br/wp-content/uploads/2023/06/AAAABWwapida5XbwQoNpvsqyDFyDjiTOUFOcOMXnl7Rx2h5ACD7jPHUpRFEMC3pLgFiiDbgEblTWENgAQUzwi2g6BP-P-C9cPiifKJIL6MIkLd11AkQSBkdE41Ga4CR5Yh_nT5zqig.jpg" alt="">
+        <h2> Cães de caça </h2>
+    </div>
+</a>
+    <!--Card 4-->
+    <a href="https://www.netflix.com/br/title/81011211">
+    <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BN2ZiZWU3MzMtNGM5OC00ZWVkLTkxNjUtMTYwZGU4MzgxYzk0XkEyXkFqcGc@._V1_.jpg" alt="">
+        <h2> My name </h2>
+    </div>
+</a>
+    <!--Card 5-->
+    <a href="https://www.netflix.com/kr-en/title/81943403">
+    <div class="card">
+        <img src="https://images.justwatch.com/poster/321667436/s718/family-by-choice.jpg" alt="">
+        <h2> Family by choice </h2>
+    </div>
+</a>
+    <!--Card 6-->
+    <a href="https://www.netflix.com/br/title/81410834">
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/ec/f8/80/ecf880effc2512ae10773f52d863cbdf.jpg" alt="">
+        <h2> Beleza verdadeira </h2>
+    </div>
+    </a>
+    <!--Card 7-->
+    <a href="https://www.netflix.com/br/title/81237994">
+    <div class="card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.dfUg0fLB8vxZIDAmCHmgwwHaKk?cb=thfc1falcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <h2> All of us are dead </h2>
+    </div>
+    </a>
+    <!--Card 8-->
+    <a href="https://www.netflix.com/br/title/81517168">
+    <div class="card">
+        <img src="https://series-korea.net/wp-content/uploads/2023/12/yCQFnmYhYf7XALMka2EoBRAFmPO-683x1024.jpg" alt="">
+        <h2> Twenty five twenty one </h2>
+    </div>
+    </a>
+    <!--Card 9-->
+    <a href="https://www.netflix.com/br/title/81742615">
+    <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BNTk4YmVjOGQtM2ZiMC00ZWE2LTg2ZGQtYzk2NjNmMWYzOWU4XkEyXkFqcGc@._V1_.jpg" alt="">
+        <h2> Weak hero class </h2>
+    </div>
+    </a>
+</div>
+
+</body>
+</html>
