@@ -4,78 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cards</title>
-<!--Aqui começa o css-->
-    <style>
-        body { /*estilo geral do corpo da página*/
-            background: url();
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            background-color:rgb(255, 252, 242); /*cor de fundo*/
-            margin: 20px; /*espaçamento externo*/
-        }
-
-
-header { /* cabeçalho*/
-    background: url(https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3YWJrbHY5bzJiNWhyb2Q2ZGF1M3RydzYxbzQ3bWYwbTNwMnQzZndhOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/XdPBRuLf8ma3SwBW4t/200.webp);
-    background-color:oklab(80.54299999999999% -0.08114 -0.00399); /*cor de fundo*/
-    color:rgb(5, 201, 198); /*cor do texto*/
-    padding: 20px; /* espaçamento interno*/
-    text-align: center; /*centraliza o conteúdo*/
-
-}
-
-nav a { /*links da navegação*/
-    color:rgb(14, 57, 97); /*cor dos links*/
-    margin: 0 30px; /* espaçamento lateral*/
-    text-decoration:none; /* remove o sublinhado*/
-    font-size: 20px; /* tamanho da fonte*/
-}
-
-nav a:hover { /*quando o mouse passa sobre o link*/
-    text-decoration:underline; /*adicione sublinhado*/
-    color:rgb(129, 203, 193); /* muda a cor*/
-}
-
-.fundo { /* container dos cards*/
-display: flex; /* ativa flexbox(lado a lado)*/
-gap: 10px; /*espaço entre os cards*/
-width: 100%; /*ocupa toda a largura*/
-height: 100; /*ocupa toda a altura*/
-flex-wrap: wrap; /*permite quebrar a linha*/
-justify-content: space-around; /*distribui os cards*/
-margin-top: 10px; /* espaço acima*/
-}
-
-.card { /*card individual*/
-    width:300px; /*largura fixa*/
-    height:350px; /* altura fixa*/
-    align-items: center; /*centraliza o conteúdo*/
-    background-color:rgb(140, 202, 201); /*cor do card*/
-    text-align: center; /* centraliza texto*/
-    margin: 30px; /*espaço lateral e horizontal do card*/
-    color:rgb(17, 15, 77); /*define uma cor para o texto no card*/
-    border-radius: 15px; /*cantos arredondados*/
-    padding: 10px; /*espaço interno*/
-}
-
-.card img {
-    width: 80%;
-    height:100%;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.card:hover {
-    transform: translateY(-10px) scale(1.02);
-    border-color:rgb(130, 203, 212);
-    box-shadow: 0 15px 20px;
-    background-image: url(https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3YWJrbHY5bzJiNWhyb2Q2ZGF1M3RydzYxbzQ3bWYwbTNwMnQzZndhOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/XdPBRuLf8ma3SwBW4t/200.webp);
-}
-
-.subtitulo {
-    text-align: center;
-}
-    </style>
-    <!--Aqui termina css-->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
